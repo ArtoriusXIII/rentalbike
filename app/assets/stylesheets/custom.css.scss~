@@ -1,12 +1,56 @@
 
-$navbar-default-bg: lightblue;
+$navbar-default-bg: lightgrey; 
 
 
 
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+.about-image {
+ width: 680px;
+ padding: 10px;
+}
+.about-image1 {
+  width: 1050px;
+ padding: 10px;
+}
+.contact {
+ margin: 0px 10px 0px 0px;
+}
+.about-image2 {
+  width: 100%;
+  height: 250px;
+ padding: 0px;
+    margin: 0px 10px 0px 10px;
+	float: right;
+  
+}
+.address{
+ margin: 0 0 0 2px;
+}
+.address1 {
+  margin: 0 0 0 2px;
+}
+.services {
+ margin: 0 0 0 2px;
+}
+hr{
+color: #f00;
+background-color: #f00;
+height: 5px;
+}
+.jumbotron {
+  background-image: url('home_banner.jpg');
+  height: 450px; 
+}
+#map {
+  width: 1010px;
+  height: 300px;
+ 
+  margin: 10px 0px 0px 30px;
+  
 
+}
 
 #logo {
   float: left;
@@ -18,53 +62,98 @@ $navbar-default-bg: lightblue;
 }
 
 #logo:hover {
-  color: #fff;
+  color: #ff0;
   text-decoration: none;
 }
 body {
-  background-image: url("http://www.bluewatertourism.com/images/listing_basic/ID_464/Comfortech3.jpg");  
+  #background-image: url("http://barcelona-home.com/blog/wp-content/upload/Ajo%20Bike/ajo-bike-rental-in-Barcelona-4.jpg");  
+  background-image: url("http://www.gutshofzillertal.com/sites/default/files/tirolbike/images/Tirolbike-bicycle-center-rent-a-bike-in-mayrhofen-zillertal-tirol_01.jpg");  
   background-color: #cccccc;
   background-size: cover;
 }
 #container {
   position: relative;
  
-  border:2px brown solid;
+  border:2px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
   margin: auto;  
   min-height: cover; 
   max-width: 1100px;
   min-width: 750px;
-  background-image: url("http://previews.123rf.com/images/kritchanut/kritchanut1312/kritchanut131200058/24736220-Light-wood-texture-background-Stock-Photo-white.jpg");
+  background-image: url("http://images.all-free-download.com/images/graphiclarge/free_vintage_floral_background_148772.jpg");
   padding: 10px;
+  
   
 }
 #container-products {
  
-  background-image: url("http://cache.desktopnexus.com/thumbseg/1454/1454516-bigthumbnail.jpg");
   
   float: left;
   padding: 3px;
   min-height: 750px;
   width: 820px;
-  border: 2px orange solid;
-  margin: 20px 15px 10px 20px;  
+  border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
+  margin: 20px 15px 10px 20px;
+  background: rgba(255,255,255,.5);
+   
 }
-#sidebar {
-  padding: 5px;
- 
-  background-image: url("http://previews.123rf.com/images/almoond/almoond1102/almoond110200330/8898337-Brushed-metal-plate-background--Stock-Vector-metal-steel-texture.jpg");
+#container-contact{
+
+width: 1020px;
+border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
+  margin: 10px 15px 10px 15px;
+
   
-  border: 2px pink solid;
+  padding: 3px;
+	
+  background: rgba(255,255,255,.5);
+
+}
+
+#time{
+float: left;
+width: 170px;
+color: white;
+padding: 5px;
+  border: 5px orange solid;
+ margin: 20px 15px 10px 10px; 
+	background: url('img/red_transparent_background.png');
+	background: rgba(255, 0, 0, 0.4);
+}
+#sidebar-search{
+  padding: 5px;
+  border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
   width: 170px;
   float: left;
   margin: 20px 15px 10px 10px; 
+	background: rgba(255,255,255,.5);
 }
+#sidebar {
+  padding: 5px;
+  border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
+  width: 170px;
+  float: left;
+  margin: 20px 15px 10px 10px; 
+	background: url('img/red_transparent_background.png');
+	background: rgba(255, 0, 0, 0.4);
+}
+
+
 #footer {
  background-position: center; background-repeat: no-repeat; width:100%; height: 40px; margin:0 auto; position:fixed; bottom:0;
  background-color: black; text-align: center;
   color: white;
   clear: both;
-  padding: 5px;
+  padding: 15px;
   
 
  
@@ -72,4 +161,22 @@ body {
 h6 {
   margin: 0;
   font-weight: normal;
+}
+#container-about {
+ 
+  border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
+  margin: 20px 15px 10px 20px;
+   
+	background: rgba(255,255,255,.5);
+}
+#container-index{
+ 
+  border: 5px orange solid;
+  border-radius:9px;
+  -moz-border-radius:9px; /* Old Firefox */
+  margin: 20px 15px 10px 20px;
+   
+	background: rgba(255,255,255,.5);
 }

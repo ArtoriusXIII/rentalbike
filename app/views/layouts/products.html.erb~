@@ -7,6 +7,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+
+
+
 </head>
 <body>
 
@@ -23,34 +27,54 @@
 	</div>
 
 
+	<div id="time">
+
+	  <%=  @my_time %>
+	<p><%= week_field_tag :week %><p>
+
+	</div>
 
 	<div id="sidebar">
-		<h2>sidebar</h2>
-		<aside id="text-6" class="widget widget_text"><h3 class="widget-title">Our Prices</h3>			
-			<div class="textwidget">
-				<strong>Standard Bikes</strong>
-				1 hr – €5<br>
-				3 hours – €10<br>
-				Full Day – €15<br><br>
-				<strong>Tandem &amp; Electric Bikes</strong><br>
-				€10 for 1 hour<br>
-				€20 for 3 hours<br>
-				€30 for full Day<br><br>
-				<strong>Carry Along for Kids</strong><br>
-				From €2.50 for Child’s Seat<br><br>
-				<strong>Trailers (Fits up to 2 kids)</strong><br>
-				From €10
-			</div>
-		</aside>			
-	</div>
+ 
+			<!-- InstanceBeginEditable name="Text" -->
+			<table border="1" cellpadding="6" cellspacing="0" bordercolor="#CCCCCC">
+			  <tr bgcolor="#336600">
+                <th width="195">Single Bike</th>
+			    <th width="195">Tandem</th>
+		      </tr>
+              <tr align="center">
+                <td><strong>&#8364;5</strong> for a couple of hours</td>
+                <td><strong>&#8364;10</strong> per hour</td>
+              </tr>
+              <tr align="center">
+                <td><strong>&#8364;8</strong> for the afternoon</td>
+                <td><strong>&#8364;20</strong> for 3 hours </td>
+              </tr>
+              <tr align="center">
+                <td><strong>&#8364;10</strong> for the whole day</td>
+                <td><strong>&#8364;40</strong> full day</td>
+              </tr>
+            </table>	
+			<p style="margin:1px">&nbsp;</p>		
+			<table border="1" cellspacing="0" cellpadding="6" bordercolor="#CCCCCC">
+			  <tr>
+                <th width="404" bgcolor="#336600">Carry Along / Half Wheeler</th>
+		      </tr>
+              <tr align="center">
+                <td><strong>&#8364;2.50</strong> per hour</td>
+              </tr>
+            </table>
+		
+			<!-- InstanceEndEditable -->
+	</div><!-- contentmain -->
 		
 
 		
-	<div style="clear:both"/>
+	<div style="clear:both">&nbsp;</diV>
  </div>
 <div id="footer">
-		<h6 class="footertext">&copy; Clontarf rent bike store; 2016</h6>
-	</div>
+		<h6 class="footertext">&copy; Phoenix rental bike store; 2016</h6>
+</div>
 
 
 </body>

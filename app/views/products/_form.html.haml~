@@ -1,3 +1,4 @@
+.row
 = form_for @product, multipart: true  do |f|
   - if @product.errors.any?
     #error_explanation
@@ -6,30 +7,31 @@
         - @product.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
+  .form-group
     = f.label :name
-    = f.text_field :name
-  .field
+    = f.text_field :name, {class: "form-control"}
+  .form-group
     = f.label :price
-    = f.text_field :price
-  .field
+    = f.text_field :price, {class: "control-label"}
+  .form-group
     = f.label :image
     = f.file_field :image
-  .field
-    = f.label :size
-    = f.text_field :size_type
+  .form-group
+    = f.label :size,  {class: "control-label"}
+    = f.select :size_type, options_for_select([['',''],['Large','Large'],['Medium','Medium'],['Small','Small']])
+    
    
    
-  .field
+  .form-group
     = f.label :description
-    = f.text_field :description
-  .field
+    = f.text_area :description, {class: "form-control",rows:"4"}
+  .form-group
     = f.label :brand
-    = f.text_field :brand
-  .field
-    = f.label :trailer
-    = check_box_tag 'product[trailer]', 'trailer'
+    = f.text_field :brand,  {class: "form-control"}
+  .form-group
+    = f.label :trailers
+    = check_box_tag 'product[trailers]', 'trailers'
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', class: "btn btn-primary"
 
 

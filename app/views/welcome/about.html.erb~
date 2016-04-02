@@ -1,0 +1,53 @@
+
+
+
+
+	
+	<div id="container-about">
+
+	       <div class="row">
+		 <div class="col-md-4">
+		  <h3 class=""heading">About us</h3>
+		  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+		     ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+		     ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. <a href=" contact" >Contact us</a> </p>
+		  
+		 </div>
+		 </hr>
+		 <div class="col-md-3">
+		  <img alt="About" src="http://static.seedublinbybike.ie/uploads/2013/09/photo-28.jpg" class="about-image">
+		 </div>
+
+	       </div>
+	
+
+           <hr>
+
+
+	     <div class="row">
+		<div class="col-md-12">
+			<h3>Our services</h3>
+		</div>
+		<div class="col-md-4">
+		  <h4>Prices</h4>
+		  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+		     ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div>
+
+		<div class="col-md-8">
+		  <h4>About Us</h4>
+		  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+		     ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div>
+
+		<div class="col-md-4">
+		  <h4>Contact</h4>
+		  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
+		     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		</div>
+	     </div>
+</div>

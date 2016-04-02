@@ -8,13 +8,22 @@ class ProductsController < ApplicationController
   layout "products"
   # GET /products
   # GET /products.json
+
+	
+	
   def index
-    @products = Product.search(params[:search])
+    @my_time = Time.now
+	
+    @products = Product.search(params[:search]).page(params[:page]).per(3).all
+    #@products = Product.page(params[:page] || 1).per(5).all
+        #if @products = if params[:search]
+	
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+	@my_time = Time.now
     render layout: "application"
   end
 
@@ -94,6 +103,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :price, :image, :description, :size_type, :brand)
+      params.require(:product).permit(:name, :price, :image, :description, :size_type, :search, :brand)
     end
 end

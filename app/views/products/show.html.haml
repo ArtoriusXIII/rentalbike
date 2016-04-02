@@ -1,27 +1,50 @@
+%script(src= "//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+%script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js")
+
 %p#notice= notice
 
+
+.row
+ .col-xs-6
+  %h1= @product.name
+  %p
+   %b Brand:
+   = @product.brand
+  %p
+   %b Size:
+   = @product.size_type 
+
+  %p= @product.price
+  %p
+   %b Description:
+   = @product.description
+   
+ .col-xs-6
+  %p= image_tag @product.image, height: "100%", width: "100%"
+.row
+ .col-xs-12
+  %b Date:
+  = @my_time = Time.now
+
+  
+
  
-%h1= @product.name
-
-%p= @product.price
-%p= image_tag @product.image, height: "300%"
-
-
-%p=link_to "Add bike for booking", add_cart_path, method: :post, class: "btn btn-primary"
  
-%p
-  %b Description:
-  = @product.description
-%p
-  %b Brand:
-  = @product.brand
-%p
-  %b Size:
-  = @product.size_type 
-= link_to 'Back', products_path
+%hr
+
+ .col-xs-12
+
+
+  %p=link_to "Add bike for booking", add_cart_path, method: :post, class: "btn btn-primary"
+
+
+
+  = link_to 'Back', products_path
+
+
 \|
 -if current_user && current_user.admin?
-  = link_to 'Edit', edit_product_path(@product)
+ = link_to 'Edit', edit_product_path(@product)
   
   
 

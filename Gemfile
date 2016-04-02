@@ -22,6 +22,9 @@ gem 'puma'
 gem 'devise'
 gem 'country_select'
 gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'sqlite3'
