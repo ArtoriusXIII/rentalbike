@@ -48,8 +48,6 @@ group :development, :test do
   gem 'pry-rails'
 end
 
-
-
 group :development, :test do
   gem 'byebug'
 end
